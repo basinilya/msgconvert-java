@@ -1,0 +1,7 @@
+* text=auto
+
+*.bat -text
+/.classpath text
+/.project text
+/.settings/** text
+*.launch text

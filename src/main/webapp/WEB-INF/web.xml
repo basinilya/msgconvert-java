@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+		xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+		<session-config>
+		<!-- Jetty-specific, Breaks Safari, https://wiki.shibboleth.net/confluence/display/DEV/Tomcat+and+Jetty+SameSite+Workarounds -->
+		<!-- 
+				<cookie-config>
+						<comment>__SAME_SITE_NONE__</comment>
+				</cookie-config>
+		-->
+		</session-config>
+		<servlet>
+				<servlet-name>UploadServlet</servlet-name>
+				<servlet-class>org.foo.UploadServlet</servlet-class>
+				<multipart-config>
+						<max-file-size>300000000</max-file-size>
+						<max-request-size>-1</max-request-size>
+						<file-size-threshold>5242880</file-size-threshold>
+				</multipart-config>
+		</servlet>
+		<servlet-mapping>
+				<servlet-name>UploadServlet</servlet-name>
+				<url-pattern>/</url-pattern>
+		</servlet-mapping>
+
+</web-app>

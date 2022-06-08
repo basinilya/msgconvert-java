@@ -1,0 +1,6 @@
+<Context>
+		<!-- Tomcat-specific, Breaks Safari, https://wiki.shibboleth.net/confluence/display/DEV/Tomcat+and+Jetty+SameSite+Workarounds -->
+		<!-- 
+		<CookieProcessor sameSiteCookies="none" />
+		 -->
+</Context>

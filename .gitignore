@@ -1,0 +1,53 @@
+old-hash-map.jar
+
+/documentum/
+/.settings/*
+#!/.settings/org.eclipse.jdt.core.prefs
+#!/.settings/org.sonarlint.eclipse.core.prefs
+*.log
+
+# Java class files
+*.class
+
+# generated files
+/bin*/*
+/target/
+
+/classes/
+/test-classes/
+/gen/
+/junit-reports/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+
+*.pydevproject
+.project
+.metadata
+/bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.loadpath
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# External tool builders
+.externalToolBuilders/*
+!.externalToolBuilders/JAR_Builder.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+!.gitignore
+!build-*.bat
